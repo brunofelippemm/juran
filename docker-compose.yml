@@ -15,6 +15,7 @@ services:
       - 4040:4040
     volumes:
       - shared-workspace:/opt/workspace
+      - jupyterlab:/app
   spark-master:
     image: andreper/spark-master:3.0.0
     container_name: spark-master
